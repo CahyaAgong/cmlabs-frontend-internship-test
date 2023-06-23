@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Category Detail</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col items-center bg-[#FFE7DC]">
+    <div
+      class="w-full px-6 sm:px-0 max-w-[540px] xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md"
+    >
+      <nav
+        class="w-full px-8 py-4 flex flex-row justify-between items-center border-b border-b-[#FFCDB5]"
+      >
+        <div>
+          <a href="./../index.html"
+            ><h1 class="text-lg font-bold text-[#F43A30]">Meals Me</h1></a
+          >
+        </div>
+        <div class="hidden md:flex text-black font-semibold text-sm">
+          <ul class="flex flex-row space-x-5">
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./../index.html#categories">Categories</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-row space-x-5">
+          <span class="cursor-pointer"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </span>
+          <span class="md:hidden cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+              />
+            </svg>
+          </span>
+        </div>
+      </nav>
+
+      <section id="breadcrumbs">
+        <div class="inline-flex w-full py-2 items-center space-x-2 mt-10">
+          <a href="./../index.html"><span class="font-semibold">Home</span></a>
+          <span class=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </span>
+          <a href="#"><span class="font-semibold">Meals</span></a>
+          <span class=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </span>
+          <a href="#" class="truncate">
+            <span
+              id="breadcrumbs-category"
+              class="text-[#F43A30] font-semibold"
+            ></span
+          ></a>
+        </div>
+      </section>
+
+      <div
+        id="dataContainer"
+        class="grid grid-flow-row grid-cols-1 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 gap-5 w-full mt-10"
+      ></div>
+
+      <section id="newsletter" class="mt-20">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <h1 class="text-black font-bold text-4xl">
+            Subcribe <span class="text-[#F43A30]">Newsletter</span>
+          </h1>
+
+          <div
+            class="w-fit bg-[#FFD9C8] px-4 py-2 rounded-lg mt-5 md:mt-0 flex flex-row flex-shrink-0 gap-4"
+          >
+            <input
+              type="text"
+              class="text-sm text-black outline-none bg-transparent"
+              placeholder="Enter you email address"
+            />
+            <button
+              class="text-white text-xs sm:text-sm bg-[#F43A30] px-4 py-2 rounded-lg"
+            >
+              Subscribe Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="border-t border-t-[#FFCDB5] mt-20 py-10 w-full">
+        <div
+          class="flex flex-col md:flex-row w-full justify-between space-y-5 md:space-y-0"
+        >
+          <div>
+            <h1 class="text-lg font-bold text-[#F43A30]">Meals Me</h1>
+            <p class="mt-2 text-[#88817E] font-semibold text-sm">
+              570 8th Ave. New York, NY 10078 <br />
+              United States <br />
+              <br />
+              +88017 (482) 888
+            </p>
+            <p class="text-[#F43A30] font-bold mt-1 text-sm cursor-pointer">
+              Make a call
+            </p>
+          </div>
+
+          <div>
+            <h1 class="text-lg font-bold text-black">Opening Hours</h1>
+            <p class="mt-2 text-[#88817E] font-semibold text-sm">
+              Monday - Friday: 8am - 4pm
+            </p>
+            <p class="mt-2 text-[#88817E] font-semibold text-sm">
+              Saturday: 10am - 4pm
+            </p>
+            <p class="mt-2 text-[#F43A30] font-bold text-sm">Sunday Closed</p>
+          </div>
+
+          <div>
+            <h1 class="text-lg font-bold text-black">Book Your Recipes</h1>
+            <input
+              class="outline-none px-4 py-2 rounded-lg text-sm mt-3"
+              type="number"
+              placeholder="How Many Recipes"
+            />
+            <button
+              class="flex flex-row items-center space-x-2 bg-[#F43A30] px-4 py-2 w-fit rounded-lg text-white mt-3"
+            >
+              <span class="font-semibold text-sm">Book Recipes</span>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.7"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./../../utils/category-detail.js"></script>
+  </body>
+</html>
