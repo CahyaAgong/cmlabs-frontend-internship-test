@@ -7,3 +7,4 @@ Simple application to show meals or dishes list and recipes
 1. Run npm install
 2. Install Live Server extension on VSCode if you don't have it yet.
 3. Run npm run dev
+4. click right on ./pages/index.html file and choose "open with live server"
